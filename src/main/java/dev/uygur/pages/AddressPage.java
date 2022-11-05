@@ -72,7 +72,7 @@ public class AddressPage {
     }
 
     private void logOut(){
-        methods.click(By.xpath("//div[@class=\"menu top login\"]/ul/li/div/ul/li[4]/a[@href]"));
+        methods.click(By.xpath("//div[@class=\"menu top login\"]/ul/li/div/ul/li[4]/a"));
         methods.waitBySecond(3);
     }
 }

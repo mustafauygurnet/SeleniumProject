@@ -25,8 +25,8 @@ public class ProductPage {
     }
 
     private void searchToText(){
-        methods.sendKeys(By.cssSelector("#search-input"), "oyuncak");
-        methods.waitBySecond(2);
+        methods.sendKeys(By.id("search-input"), "oyuncak");
+        methods.waitBySecond(5);
 
         methods.click(By.cssSelector(".button-search"));
         methods.waitBySecond(3);
@@ -34,7 +34,7 @@ public class ProductPage {
 
     private void scrollThePage(){
         methods.scrollWithAction(By.xpath("//div[@class=\"product-list\"]/div[7]"));
-        methods.waitBySecond(3);
+        methods.waitBySecond(5);
     }
 
     private void addProductToFavorite(){

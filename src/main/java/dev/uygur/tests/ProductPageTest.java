@@ -11,7 +11,7 @@ public class ProductPageTest extends BaseTest {
 
 
     @Test
-    public void productTest(){
+    public void goTo(){
         LoginPage loginPage = new LoginPage();
         ProductPage productPage = new ProductPage();
         PointCatalogPage pointCatalogPage = new PointCatalogPage();
