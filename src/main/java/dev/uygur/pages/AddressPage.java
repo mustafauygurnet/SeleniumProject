@@ -71,8 +71,9 @@ public class AddressPage {
         methods.waitBySecond(3);
     }
 
-    private void logOut(){
-        methods.click(By.xpath("//div[@class=\"menu top login\"]/ul/li/div/ul/li[4]/a"));
-        methods.waitBySecond(3);
+    public void logOut(){
+        methods.findElement(By.cssSelector("div.menu.top.login>ul>li>div>ul>li:nth-child(4)>a"));
+        methods.waitBySecond(2);
+
     }
 }

@@ -27,18 +27,19 @@ public class LoginPageTest extends BaseTest {
 
 
         loginPage.login();
+        addressPage.logOut();
         logger.info("login başarılı");
-        productPage.searchProduct();
-        logger.info("search başarılı");
-        pointCatalogPage.goTo();
-        logger.info("point catalog başarılı");
-        randomProductPage.goTo();
-        logger.info("product prosses başarılı");
-        favoritePage.goTo();
-        logger.info("favorite page başarılı");
-        cartPage.goTo();
-        logger.info("cart page başarılı");
-        addressPage.goTo();
+        //productPage.searchProduct();
+        //logger.info("search başarılı");
+        //pointCatalogPage.goTo();
+        //logger.info("point catalog başarılı");
+        //randomProductPage.goTo();
+        //logger.info("product prosses başarılı");
+        //favoritePage.goTo();
+        //logger.info("favorite page başarılı");
+        //cartPage.goTo();
+        //logger.info("cart page başarılı");
+        //addressPage.goTo();
         logger.info("address ekleme başarılı");
 
     }
