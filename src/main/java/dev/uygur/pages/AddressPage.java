@@ -71,7 +71,7 @@ public class AddressPage {
         methods.waitBySecond(3);
     }
 
-    public void logOut(){
+    private void logOut(){
         methods.findElement(By.cssSelector("div.menu.top.login>ul>li>div>ul>li:nth-child(4)>a"));
         methods.waitBySecond(2);
 
