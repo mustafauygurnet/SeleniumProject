@@ -1,5 +1,6 @@
 package dev.uygur.pages;
 
+import dev.uygur.constants.Messages;
 import dev.uygur.methods.Methods;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -32,8 +33,8 @@ public class LoginPage {
     }
 
     private void writeUserInfos(){
-        methods.sendKeys(By.id("login-email"),"mustafauygurr@gmail.com");
-        methods.sendKeys(By.id("login-password"),"123456789abcd");
+        methods.sendKeys(By.id("login-email"), Messages.EMAIL);
+        methods.sendKeys(By.id("login-password"),Messages.EMAIL);
         logger.info("Login sayfasına email ve password bilgileri girildi");
         methods.waitBySecond(2);
     }

@@ -1,5 +1,6 @@
 package dev.uygur.pages;
 
+import dev.uygur.constants.Messages;
 import dev.uygur.methods.Methods;
 import org.openqa.selenium.By;
 
@@ -24,18 +25,18 @@ public class AddressPage {
         methods.waitBySecond(4);
 
 
-        methods.sendKeys(By.id("address-firstname-companyname"),"Mustafa");
-        methods.sendKeys(By.id("address-lastname-title"),"Uygur");
+        methods.sendKeys(By.id("address-firstname-companyname"),Messages.FIRST_NAME);
+        methods.sendKeys(By.id("address-lastname-title"),Messages.LAST_NAME);
 
-        methods.sendKeys(By.id("address-zone-id"),"İstanbul");
+        methods.sendKeys(By.id("address-zone-id"),Messages.CITY);
         methods.waitBySecond(2);
-        methods.sendKeys(By.id("address-county-id"),"EYÜPSULTAN");
-        methods.sendKeys(By.id("address-address-text"),"ORDU CAD. No:125 Kat:1 Daire:1");
+        methods.sendKeys(By.id("address-county-id"),Messages.ZONE);
+        methods.sendKeys(By.id("address-address-text"),Messages.ADDRESS);
 
-        methods.sendKeys(By.id("district"),"YENİDOĞAN MAH");
-        methods.sendKeys(By.id("address-postcode"),"34245");
-        methods.sendKeys(By.id("address-mobile-telephone"),"5334678290");
-        methods.sendKeys(By.id("address-tax-id"),"52168107718");
+        methods.sendKeys(By.id("district"),Messages.DISTRICT);
+        methods.sendKeys(By.id("address-postcode"),Messages.ZIP_CODE);
+        methods.sendKeys(By.id("address-mobile-telephone"),Messages.PHONE_NUMBER);
+        methods.sendKeys(By.id("address-tax-id"),Messages.NATIONAL_IDENTITY);
 
         methods.waitBySecond(4);
     }
@@ -51,16 +52,16 @@ public class AddressPage {
     }
 
     private void creditCardInfos(){
-        methods.sendKeys(By.id("credit-card-owner"),"Mustafa Uygur");
-        methods.sendKeys(By.id("credit_card_number_1"),"4912");
-        methods.sendKeys(By.id("credit_card_number_2"),"0550");
-        methods.sendKeys(By.id("credit_card_number_3"),"4440");
-        methods.sendKeys(By.id("credit_card_number_4"),"8591");
+        methods.sendKeys(By.id("credit-card-owner"), Messages.CREDIT_CARD_OWNER);
+        methods.sendKeys(By.id("credit_card_number_1"),Messages.CREDIT_CARD_FIRST_NUMBER);
+        methods.sendKeys(By.id("credit_card_number_2"),Messages.CREDIT_CARD_SECOND_NUMBER);
+        methods.sendKeys(By.id("credit_card_number_3"),Messages.CREDIT_CARD_THIRD_NUMBER);
+        methods.sendKeys(By.id("credit_card_number_4"),Messages.CREDIT_CARD_FOURTH_NUMBER);
         methods.waitBySecond(3);
 
-        methods.sendKeys(By.id("credit-card-expire-date-month"),"09");
-        methods.sendKeys(By.id("credit-card-expire-date-year"),"2023");
-        methods.sendKeys(By.id("credit-card-security-code"),"202");
+        methods.sendKeys(By.id("credit-card-expire-date-month"),Messages.CREDIT_CARD_DATE_MONTH);
+        methods.sendKeys(By.id("credit-card-expire-date-year"),Messages.CREDIT_CARD_DATE_YEAR);
+        methods.sendKeys(By.id("credit-card-security-code"),Messages.CREDIT_CARD_CVV);
 
         methods.waitBySecond(7);
 
