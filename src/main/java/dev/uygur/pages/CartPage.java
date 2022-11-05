@@ -32,7 +32,7 @@ public class CartPage {
         methods.waitBySecond(3);
 
         int quantityNumber = Integer.parseInt(quantity);
-        quantityNumber = quantityNumber + 1;
+        quantityNumber = quantityNumber + 5;
         methods.waitBySecond(4);
 
         methods.clear(By.cssSelector(".js-cart-update-product>input"));
