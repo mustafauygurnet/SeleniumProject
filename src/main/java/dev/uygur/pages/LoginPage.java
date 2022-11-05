@@ -34,7 +34,7 @@ public class LoginPage {
 
     private void writeUserInfos(){
         methods.sendKeys(By.id("login-email"), Messages.EMAIL);
-        methods.sendKeys(By.id("login-password"),Messages.EMAIL);
+        methods.sendKeys(By.id("login-password"),Messages.PASSWORD);
         logger.info("Login sayfasına email ve password bilgileri girildi");
         methods.waitBySecond(2);
     }
