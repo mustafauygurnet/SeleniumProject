@@ -152,10 +152,10 @@ public class PointCatalogPage {
 
     private void CreditCardInfos(){
         methods.sendKeys(By.id("credit-card-owner"),"Mustafa Uygur");
-        methods.sendKeys(By.id("credit_card_number_1"),"4506");
-        methods.sendKeys(By.id("credit_card_number_2"),"5446");
-        methods.sendKeys(By.id("credit_card_number_3"),"8798");
-        methods.sendKeys(By.id("credit_card_number_4"),"6544");
+        methods.sendKeys(By.id("credit_card_number_1"),"4912");
+        methods.sendKeys(By.id("credit_card_number_2"),"0550");
+        methods.sendKeys(By.id("credit_card_number_3"),"4440");
+        methods.sendKeys(By.id("credit_card_number_4"),"8591");
         methods.waitBySecond(3);
 
         methods.sendKeys(By.id("credit-card-expire-date-month"),"09");
@@ -167,17 +167,14 @@ public class PointCatalogPage {
         methods.click(By.id("button-checkout-continue"));
         methods.waitBySecond(3);
 
-        methods.click(By.id("button-checkout-continue"));
+        methods.click(By.cssSelector(".checkout-logo"));
         methods.waitBySecond(3);
+    }
 
-        methods.click(By.id("#terms-and-conditions-form>div>input"));
+    private void logOut(){
+        methods.click(By.xpath("//div[@class=\"menu top login\"]//a[@class=\"common-sprite\"]"));
+        methods.waitBySecond(2);
+        methods.click(By.xpath("//div[@class=\"menu top login\"]/ul/li/div/ul/li[4]"));
         methods.waitBySecond(3);
-
-        methods.click(By.cssSelector(".buttons>.right>input"));
-        methods.waitBySecond(3);
-
-
-
-
     }
 }
