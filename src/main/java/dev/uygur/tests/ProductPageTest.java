@@ -18,7 +18,6 @@ public class ProductPageTest extends BaseTest {
 
         loginPage.login();
         productPage.searchProduct();
-
         pointCatalogPage.goTo();
     }
 

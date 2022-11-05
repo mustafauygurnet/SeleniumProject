@@ -26,7 +26,7 @@ public class ProductPage {
 
     private void searchToText(){
         methods.sendKeys(By.cssSelector("#search-input"), "oyuncak");
-        methods.waitBySecond(3);
+        methods.waitBySecond(2);
 
         methods.click(By.cssSelector(".button-search"));
         methods.waitBySecond(3);
@@ -34,7 +34,7 @@ public class ProductPage {
 
     private void scrollThePage(){
         methods.scrollWithAction(By.xpath("//div[@class=\"product-list\"]/div[7]"));
-        methods.waitBySecond(5);
+        methods.waitBySecond(3);
     }
 
     private void addProductToFavorite(){
@@ -48,7 +48,7 @@ public class ProductPage {
 
         methods.click(By.xpath("//div[@class=\"product-list\"]/div[5]/div[@class=\"grid_2 alpha omega relative\"]/div[@class=\"hover-menu\"]/a[@class=\"add-to-favorites\"]"));
         methods.clickWithJavascript("onclick");
-        methods.waitBySecond(5);
+        methods.waitBySecond(3);
 
         String value5 = methods.getText(By.cssSelector(".swal2-title.ky-swal-title-single>a"));
         Assert.assertEquals("Favorilere ekleme işlemi yapılamadı.","favorilerinize",value5);
@@ -56,7 +56,7 @@ public class ProductPage {
 
         methods.click(By.xpath("//div[@class=\"product-list\"]/div[4]/div[@class=\"grid_2 alpha omega relative\"]/div[@class=\"hover-menu\"]/a[@class=\"add-to-favorites\"]"));
         methods.clickWithJavascript("onclick");
-        methods.waitBySecond(5);
+        methods.waitBySecond(3);
 
         String value4 = methods.getText(By.cssSelector(".swal2-title.ky-swal-title-single>a"));
         Assert.assertEquals("Favorilere ekleme işlemi yapılamadı.","favorilerinize",value4);
@@ -64,7 +64,7 @@ public class ProductPage {
 
         methods.click(By.xpath("//div[@class=\"product-list\"]/div[8]/div[@class=\"grid_2 alpha omega relative\"]/div[@class=\"hover-menu\"]/a[@class=\"add-to-favorites\"]"));
         methods.clickWithJavascript("onclick");
-        methods.waitBySecond(5);
+        methods.waitBySecond(3);
 
         String value8 = methods.getText(By.cssSelector(".swal2-title.ky-swal-title-single>a"));
         Assert.assertEquals("Favorilere ekleme işlemi yapılamadı.","favorilerinize",value8);

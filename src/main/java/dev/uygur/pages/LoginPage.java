@@ -47,6 +47,6 @@ public class LoginPage {
     private void doLoginControl(){
         Assert.assertTrue(methods.isElementVisible(By.cssSelector(".common-sprite>b")));
         logger.info("Giriş başarılı bir şekilde yapıldı");
-        methods.waitBySecond(5);
+        methods.waitBySecond(3);
     }
 }

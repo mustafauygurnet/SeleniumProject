@@ -9,8 +9,9 @@ public class PointCatalogPageTest extends BaseTest {
 
     @Test
     public void login(){
-        PointCatalogPage loginPage = new PointCatalogPage();
 
+        PointCatalogPage loginPage = new PointCatalogPage();
         loginPage.goTo();
+
     }
 }
